@@ -23,16 +23,12 @@ public class TCPServer {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
             //create an output stream
-            PrintWriter outWriter = new PrintWriter(socket.getOutputStream(), true);
+            PrintWriter outWriter = new PrintWriter(socket.getOutputStream(),true);
 
             //read a line from the client
-            String request = in.readLine();
-            System.out.println("Client> " + request);
-            String reply = request.toUpperCase();
-              // send line to client
-            System.out.println("Server> " + reply);
-            outWriter.print(reply);
-             //loop back and wait for another client connection
+            String request =in.readLine();
+            System.out.println("Client> "+request);
+
 
         }
     }
