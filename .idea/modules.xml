@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/MarianChaT/MarianChaT.iml" filepath="$PROJECT_DIR$/MarianChaT/MarianChaT.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sockets/Sockets.iml" filepath="$PROJECT_DIR$/Sockets/Sockets.iml" />
       <module fileurl="file://$PROJECT_DIR$/THREAD/THREAD.iml" filepath="$PROJECT_DIR$/THREAD/THREAD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TaskList/TaskList.iml" filepath="$PROJECT_DIR$/TaskList/TaskList.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadComputer/ThreadComputer.iml" filepath="$PROJECT_DIR$/ThreadComputer/ThreadComputer.iml" />
     </modules>
   </component>
