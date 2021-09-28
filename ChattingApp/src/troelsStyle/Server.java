@@ -34,7 +34,7 @@ public class Server {
         else
         {
             outTOClient.writeObject("Wrong secret code, you are disconnected");
-            socket.close();
+            serverSocket.close();
         }
     }
 }

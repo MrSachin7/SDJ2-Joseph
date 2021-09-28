@@ -21,11 +21,12 @@ public class Client {
         String msg = keyboard.nextLine();
         outToServer.writeObject(msg);
         System.out.println(inFromServer.readObject());
-        while (true)
+        while (!msg.equals("exit"))
         {
             System.out.println("Enter message if any");
             msg = keyboard.nextLine();
             outToServer.writeObject(msg);
         }
+        socket.close();
     }
 }
