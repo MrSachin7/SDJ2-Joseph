@@ -1,6 +1,9 @@
 package server;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
@@ -30,27 +33,26 @@ public class TCPClient {
         System.out.println("Client> " + request);
         //send the line to server
         out.println(request);
-
+            //read line from the server
         System.out.println(in.readLine());
-        //read line from the server
+
         String reply = keyboard.nextLine();
-        System.out.println(reply);
+
         //send to the server again
         out.println(reply);
         System.out.println(in.readLine());
 
-        String username =keyboard.nextLine();
-        System.out.println("Client> "+username);
+        String username = keyboard.nextLine();
+        System.out.println("Client> " + username);
         out.println(username);
         System.out.println(in.readLine());
 
-       String password=keyboard.nextLine();
+        String password = keyboard.nextLine();
         out.println(password);
 
 
-        System.out.println("Test "+in.readLine());
-        if (in.readLine().equals("Approved"))
-        {
+        System.out.println("Test " + in.readLine());
+        if (in.readLine().equals("Approved")) {
             clientSocket.close();
         }
 
