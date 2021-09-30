@@ -21,6 +21,7 @@ public class TCPServer {
             // We accept a client thus creating a new Socket
             Socket socket = listenSocket.accept();
             String client = socket.getInetAddress().getHostAddress();
+            System.out.println(client+" identified");
 
             //create an input stream attached to the socket
             //InputStream , Input Stream reader , BufferedReader
