@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/DAY2/DAY2.iml" filepath="$PROJECT_DIR$/DAY2/DAY2.iml" />
       <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects2.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoginClient/LoginClient.iml" filepath="$PROJECT_DIR$/LoginClient/LoginClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoginJSONServerSide/LoginJSONServerSide.iml" filepath="$PROJECT_DIR$/LoginJSONServerSide/LoginJSONServerSide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Login/LoginServer.iml" filepath="$PROJECT_DIR$/Login/LoginServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/MarianChaT/MarianChaT.iml" filepath="$PROJECT_DIR$/MarianChaT/MarianChaT.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreaded/MultiThreaded.iml" filepath="$PROJECT_DIR$/MultiThreaded/MultiThreaded.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sockets/Sockets.iml" filepath="$PROJECT_DIR$/Sockets/Sockets.iml" />

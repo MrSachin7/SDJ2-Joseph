@@ -31,6 +31,7 @@ public class TCPClient {
         String reply = (String) inFromServer.readObject();
         System.out.println("The server responded : " + reply);
         socket.close();
+        
 
     }
 }
