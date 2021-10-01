@@ -15,7 +15,7 @@ public class ClientClass {
         Socket clientSocket = new Socket(HOST, PORT);
 
         BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        PrintWriter outToServer = new PrintWriter(clientSocket.getOutputStream());
+        PrintWriter outToServer = new PrintWriter(clientSocket.getOutputStream(),true);
 
         System.out.println("Write a secret line to access the server");
         String request = keyboard.nextLine();
