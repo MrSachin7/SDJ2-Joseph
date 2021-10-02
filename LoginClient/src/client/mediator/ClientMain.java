@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class ClientMain {
-
-
     public static void main(String[] args) throws IOException {
         Model model = new ModelManager();
         Scanner keyboard = new Scanner(System.in);

@@ -42,10 +42,9 @@ public class TaskListCommunicationThreadHandler implements Runnable {
                 } else if (request.toUpperCase().equals("SIZE")) {
                     out.writeUTF("task size " + tasks.size());
                 } else if (request.toUpperCase().equals("GET")) {
-                    if (tasks.size()==0){
+                    if (tasks.size() == 0) {
                         out.writeUTF("Error, nothing in the list");
-                    }
-                    else{
+                    } else {
                         Task temp = tasks.getAndRemoveNextTask();
                         out.writeUTF("task String: " + temp.getText() + "\ntask time: " + temp.getEstimatedTime());
                     }
