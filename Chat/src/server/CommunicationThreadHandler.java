@@ -19,8 +19,8 @@ public class CommunicationThreadHandler implements Runnable {
 
     public CommunicationThreadHandler(Socket socket) throws IOException {
         this.socket = socket;
-        inFromClient = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         outToClient = new PrintWriter(socket.getOutputStream(), true);
+        inFromClient = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         ip = socket.getInetAddress().getHostAddress();
         gson = new Gson();
     }
@@ -31,6 +31,7 @@ public class CommunicationThreadHandler implements Runnable {
         while (true) {
 
             try {
+                System.out.println("run method");
                 String json = inFromClient.readLine();
                 System.out.println("JSON from " + ip + " " + json);
                 Message message = gson.fromJson(json, Message.class);

@@ -27,15 +27,16 @@ public class ChatClient {
 
     public void execute() throws IOException {
         while (true) {
+
             System.out.println("Enter the message body to send to the server...");
             String messageBody = keyboard.nextLine();
             Message message = new Message(messageBody);
             System.out.println(message);
             String messageJSON = gson.toJson(message);
+            System.out.println(messageJSON);
             outToServer.println(messageJSON);
             if (messageBody.toUpperCase().equals("EXIT"))
             {
-
                 break;
             }
         }

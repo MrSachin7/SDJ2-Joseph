@@ -11,16 +11,18 @@ public class ChatServer {
     public ChatServer(int port) throws IOException {
         welcomeSocket= new ServerSocket(port);
         System.out.println("Server started.....");
-        Socket clientSocket = welcomeSocket.accept();
-        communicationThreadHandler = new CommunicationThreadHandler(clientSocket);
-        System.out.println(clientSocket.getInetAddress().getHostAddress()+"  identified");
+
 
     }
 
-    public void execute()
-    {
+    public void execute() throws IOException {
+        while(true){
+            Socket clientSocket = welcomeSocket.accept();
+            communicationThreadHandler = new CommunicationThreadHandler(clientSocket);
+            System.out.println(clientSocket.getInetAddress().getHostAddress()+"  identified");
+            Thread t1 = new Thread(communicationThreadHandler);
+            t1.start();
+        }
 
-       Thread t1 = new Thread(communicationThreadHandler);
-       t1.start();
     }
 }

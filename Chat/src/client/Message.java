@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class Message {
     private String id;
     private String messageBody;
-    //private LocalDateTime dateTime = LocalDateTime.now();
+    private LocalDateTime dateTime = LocalDateTime.now();
 
     public Message(String id, String message) {
         this.id = id;
@@ -20,7 +20,7 @@ public class Message {
 
 
     public Message update() {
-       // this.dateTime = LocalDateTime.now();
+        this.dateTime = LocalDateTime.now();
         return this;
     }
 
@@ -36,18 +36,18 @@ public class Message {
         return messageBody;
     }
 
-  //  public LocalDateTime getDateTime() {
-    //    return dateTime;
-    //}
+    public LocalDateTime getDateTime() {
+        return dateTime;
+    }
 
- /*   public String getDateTime(String format) {
+   public String getDateTime(String format) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
         return dateTime.format(formatter);
-    }**/
+    }
 
     public String toString() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy HH:mm:ss");
-        return "id=" + id + ", time=" +/* dateTime.format(formatter) +**/ ", message=\"" + messageBody + "\"";
+        return "id=" + id + ", time= " + dateTime.format(formatter)+ ", message=\"" + messageBody + "\"";
     }
 }
 
