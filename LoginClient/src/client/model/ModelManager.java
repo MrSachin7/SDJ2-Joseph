@@ -1,5 +1,7 @@
 package client.model;
 
+import client.mediator.UserClient;
+
 import java.io.IOException;
 import java.net.InetAddress;
 

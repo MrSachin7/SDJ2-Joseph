@@ -1,6 +1,7 @@
-package client.model;
+package client.mediator;
 
 import client.mediator.User;
+import client.model.Model;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
@@ -29,6 +30,7 @@ public class UserClient implements Model {
     public void disconnect() throws IOException {
         System.out.println("Disconnected....");
         socket.close();
+        keyboard.close();
     }
 
     @Override

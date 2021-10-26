@@ -40,6 +40,7 @@ public class CommunicationThreadHandler implements Runnable {
                     outToClient.println("Disconecting......");
                     break;
                 }
+                // TODO go through list of all handlers, call send on each.
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -52,5 +53,12 @@ public class CommunicationThreadHandler implements Runnable {
             e.printStackTrace();
         }**/
     }
+
+    //public void send(){
+       // outToClient.println(message);
+    //}
+
+
+
 }
 

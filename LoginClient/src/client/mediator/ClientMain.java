@@ -19,7 +19,11 @@ public class ClientMain {
             model.login(username, password);
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            main(null);
+            System.out.println("Do you want to enter again ??");
+            if (keyboard.nextLine().toUpperCase().equals("YES"))
+            {
+                main(null);
+            }
         }
     }
 }
