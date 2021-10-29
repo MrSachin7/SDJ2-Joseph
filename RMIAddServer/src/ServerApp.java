@@ -1,8 +1,6 @@
-import javax.imageio.spi.RegisterableService;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 
 public class ServerApp {
     public static void main(String[] args) throws MalformedURLException, RemoteException {
@@ -14,7 +12,7 @@ public class ServerApp {
 
     private static void startRegistry() {
         try {
-            Registry registry= LocateRegistry.createRegistry(1099);
+            LocateRegistry.createRegistry(1099);
         } catch (RemoteException e) {
             System.out.println("Registry already exists");
         }
