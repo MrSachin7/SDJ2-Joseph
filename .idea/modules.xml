@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/LoginClient/LoginClient.iml" filepath="$PROJECT_DIR$/LoginClient/LoginClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/Login/LoginServer.iml" filepath="$PROJECT_DIR$/Login/LoginServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreaded/MultiThreaded.iml" filepath="$PROJECT_DIR$/MultiThreaded/MultiThreaded.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" filepath="$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/RMIAddMessageClient/RMIAddMessageClient.iml" filepath="$PROJECT_DIR$/RMIAddMessageClient/RMIAddMessageClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/RMIAddServer/RMIAddServer.iml" filepath="$PROJECT_DIR$/RMIAddServer/RMIAddServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/RMICallBackClient/RMICallBackClient.iml" filepath="$PROJECT_DIR$/RMICallBackClient/RMICallBackClient.iml" />
