@@ -14,10 +14,7 @@ public class ClientApp {
             }
             client.send(text);
         }
-
-
-
-
-
+        keyboard.close();
+        System.exit(0);
     }
 }
